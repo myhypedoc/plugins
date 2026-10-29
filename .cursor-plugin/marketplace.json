@@ -1,0 +1,12 @@
+{
+  "name": "myhypedoc",
+  "owner": { "name": "Hype Doc" },
+  "metadata": { "description": "Plugins for Hype Doc, the place to keep your wins." },
+  "plugins": [
+    {
+      "name": "hypedoc",
+      "source": "plugins/hypedoc",
+      "description": "Log your wins and turn them into reviews, resume bullets, and status updates with Hype Doc."
+    }
+  ]
+}

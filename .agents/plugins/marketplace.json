@@ -1,0 +1,12 @@
+{
+  "name": "myhypedoc",
+  "interface": { "displayName": "Hype Doc" },
+  "plugins": [
+    {
+      "name": "hypedoc",
+      "source": { "source": "local", "path": "./plugins/hypedoc" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

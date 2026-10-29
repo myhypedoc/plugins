@@ -1,0 +1,22 @@
+{
+  "name": "@myhypedoc/pi-hypedoc",
+  "version": "1.0.0",
+  "description": "Hype Doc for Pi: connect the hosted MCP server and add skills for logging and reviewing wins.",
+  "license": "MIT",
+  "type": "module",
+  "repository": "https://github.com/myhypedoc/plugins",
+  "homepage": "https://docs.myhypedoc.com/mcp/setup-pi/",
+  "keywords": ["pi-package", "mcp", "hypedoc", "wins"],
+  "files": ["pi", "plugins/hypedoc/skills", "LICENSE", "README.md"],
+  "pi": {
+    "extensions": ["./pi/extension.ts"],
+    "skills": ["./plugins/hypedoc/skills"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "validate:live": "node scripts/validate.mjs --live"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hypedoc",
+  "version": "1.0.0",
+  "description": "Log your wins and turn them into reviews, resume bullets, and status updates with Hype Doc.",
+  "author": {
+    "name": "Hype Doc",
+    "url": "https://myhypedoc.com"
+  },
+  "homepage": "https://docs.myhypedoc.com/mcp/",
+  "repository": "https://github.com/myhypedoc/plugins",
+  "license": "MIT",
+  "keywords": ["wins", "achievements", "performance-review", "brag-document", "mcp"]
+}

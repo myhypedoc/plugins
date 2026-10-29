@@ -1,0 +1,23 @@
+name: Validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 14 * * 1"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check manifests, skills, and the live endpoint
+        run: node scripts/validate.mjs --live
+      - name: Validate with Claude Code
+        run: |
+          npx -y @anthropic-ai/claude-code plugin validate . --strict
+          npx -y @anthropic-ai/claude-code plugin validate ./plugins/hypedoc --strict
